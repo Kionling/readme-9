@@ -37,7 +37,7 @@ var questions = [
     },
     {
         type: "list",
-        message: "",
+        message: "Select a license",
         choices: [
             'MIT',
             'GPL',
@@ -65,5 +65,10 @@ var questions = [
 
 
 inquirer.prompt(questions).then(function(response){
-    
+    writeToFile("readme.md", 
+   ` ## ${response.title}
+    ${response.description}
+    ## Deployed link
+    ${response.deployedLink}
+    `)
 })
