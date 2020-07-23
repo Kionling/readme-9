@@ -68,7 +68,18 @@ inquirer.prompt(questions).then(function(response){
     writeToFile("readme.md", 
    ` ## ${response.title}
     ${response.description}
+    ## Table of contents
+* [Installation](##Installation)
+* [Author](##Author)
+* [License](##License)
+* [Contributing](##Contributing)
+* [Usage](##Usage)
+* [Tests](##Tests)
+
+
     ## Deployed link
-    ${response.deployedLink}
+    - ${response.deployedLink}
+    ## Installation 
+    ${response.install}
     `)
 })
