@@ -22,11 +22,6 @@ var questions = [
     },
     {
         type: "input",
-        message: "",
-        name: ""
-    },
-    {
-        type: "input",
         message: "Enter Deployed Link",
         name: "deployedLink"
     },
@@ -61,6 +56,16 @@ var questions = [
         message: "What are the testing procedures?",
         name: "testing"
     },
+    {
+        type: "input",
+        message: "Please link your email",
+        name: "email"
+    },
+    {
+        type: "input",
+        message: "Please link your profile pic on github",
+        name: "pic"
+    },
 ];
 
 
@@ -79,11 +84,19 @@ inquirer.prompt(questions).then(function(response){
 
 
     ## Deployed link
-    - ${response.deployedLink}
+    - [Deployed Site]${response.deployedLink}
     ## Installation 
     ${response.install}
     ## Usage 
     ${response.usages}
-  
+    ## Contributing 
+    * ${response.contribution}
+    ## Tests
+    - ${response.test}
+    ##Author
+    **${response.userN}**
+    - [Email](${response.email})
+    - [Link to Github](https://github.com/${response.userN})
+    - ![Profile picture](${response.pic})
     `)
 })
