@@ -64,4 +64,6 @@ var questions = [
 ];
 
 
-inquirer.prompt(questions)
+inquirer.prompt(questions).then(function(response){
+    
+})
