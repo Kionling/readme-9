@@ -7,8 +7,18 @@ var inquirer = require("inquirer");
 var questions = [
     {
         type: "input",
-        message: "",
-        name: ""
+        message: "Enter repo title",
+        name: "title"
+    },
+    {
+        type: "input",
+        message: "Enter Project description",
+        name: "description"
+    },
+    {
+        type: "input",
+        message: "Installation steps for this repo",
+        name: "install"
     },
     {
         type: "input",
@@ -17,23 +27,13 @@ var questions = [
     },
     {
         type: "input",
-        message: "",
-        name: ""
+        message: "Enter Deployed Link",
+        name: "deployedLink"
     },
     {
         type: "input",
-        message: "",
-        name: ""
-    },
-    {
-        type: "input",
-        message: "",
-        name: ""
-    },
-    {
-        type: "input",
-        message: "",
-        name: ""
+        message: "Usage Instructions:",
+        name: "usage"
     },
     {
         type: "list",
@@ -44,18 +44,24 @@ var questions = [
             'ISC'
 
         ],
-        name: ""
+        name: "license"
     },
     {
-        type: "",
-        message: "",
-        name: ""
+        type: "input",
+        message: "Github username",
+        name: "userN"
     },
     {
-        type: "",
-        message: "",
-        name: ""
+        type: "input",
+        message: "Who contributed to this assignment?",
+        name: "contribution"
     },
+    {
+        type: "input",
+        message: "What are the testing procedures?",
+        name: "testing"
+    },
+
 
     
 ]
