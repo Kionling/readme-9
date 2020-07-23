@@ -15,11 +15,11 @@
     ## Installation 
     Npm init before using npm functions. Npm install inquirer to use prompt features
     ## Usage 
-    undefined
+    Npm install before using this repo. Package.json has all npm packages ready to instal;
     ## Contributing 
     * Daniel Jauregui
     ## Tests
-    - undefined
+    - Node
     ##Author
     **Kionling**
     - [Email](djvdjv209@gmail.com)

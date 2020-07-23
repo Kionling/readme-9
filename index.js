@@ -88,11 +88,11 @@ inquirer.prompt(questions).then(function(response){
     ## Installation 
     ${response.install}
     ## Usage 
-    ${response.usages}
+    ${response.usage}
     ## Contributing 
     * ${response.contribution}
     ## Tests
-    - ${response.test}
+    - ${response.testing}
     ##Author
     **${response.userN}**
     - [Email](${response.email})
