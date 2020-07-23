@@ -66,7 +66,8 @@ var questions = [
 
 inquirer.prompt(questions).then(function(response){
     writeToFile("readme.md", 
-   ` ## ${response.title}
+   ` ## [License](https://img.shields.io/badge/license-${userInput.license}-blueviolet)
+   ## ${response.title}
     ${response.description}
     ## Table of contents
 * [Installation](##Installation)
@@ -83,5 +84,6 @@ inquirer.prompt(questions).then(function(response){
     ${response.install}
     ## Usage 
     ${response.usages}
+  
     `)
 })
