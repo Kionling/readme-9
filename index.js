@@ -81,5 +81,7 @@ inquirer.prompt(questions).then(function(response){
     - ${response.deployedLink}
     ## Installation 
     ${response.install}
+    ## Usage 
+    ${response.usages}
     `)
 })
