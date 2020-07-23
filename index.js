@@ -70,8 +70,8 @@ var questions = [
 
 
 inquirer.prompt(questions).then(function(response){
-    writeToFile("readme.md", 
-   ` ## [License](https://img.shields.io/badge/license-${userInput.license}-blueviolet)
+    fs.writeFileSync("readme.md", 
+   ` ## ![License](https://img.shields.io/badge/license-${response.license}-blueviolet)
    ## ${response.title}
     ${response.description}
     ## Table of contents
