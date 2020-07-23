@@ -61,7 +61,7 @@ var questions = [
         message: "What are the testing procedures?",
         name: "testing"
     },
+];
 
 
-    
-]
+inquirer.prompt(questions)
